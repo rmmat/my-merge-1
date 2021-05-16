@@ -1,7 +1,9 @@
 package orchestra;
 
+import orchestra.section.Brass;
 import orchestra.section.Section;
 import orchestra.section.Strings;
+import orchestra.section.Woodwind;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +14,8 @@ public class Orchestra {
     private Orchestra() {
         this.sections = new ArrayList<Section>();
         this.sections.add(new Strings());
+        this.sections.add(new Woodwind());
+        this.sections.add(new Brass());
     }
 
     private void print() {
