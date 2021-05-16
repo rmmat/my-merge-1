@@ -18,8 +18,6 @@ public abstract class Section {
 
     public void print() {
         System.out.println(this.name + ":");
-        this.instruments.forEach(instrument -> {
-            System.out.println('\t' + instrument);
-        });
+        System.out.println('\t' + String.join(", ", this.instruments));
     }
 }
