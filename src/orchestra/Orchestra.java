@@ -1,5 +1,7 @@
 package orchestra;
 
+import orchestra.section.Keyboard;
+import orchestra.section.Percussion;
 import orchestra.section.Section;
 
 import java.util.ArrayList;
@@ -10,6 +12,8 @@ public class Orchestra {
 
     private Orchestra() {
         this.sections = new ArrayList<Section>();
+        this.sections.add(new Keyboard());
+        this.sections.add(new Percussion());
     }
 
     private void print() {
