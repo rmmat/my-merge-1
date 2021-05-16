@@ -6,5 +6,7 @@ public class Percussion extends Section {
         addInstrument("Snare Drum");
         addInstrument("Bass Drum");
         addInstrument("Timpani");
+        addInstrument("Cymbals");
+        addInstrument("Xylophone");
     }
 }
